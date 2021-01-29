@@ -1,0 +1,36 @@
+.axit {
+   padding: 180px 0px 140px 0px;
+   background-color: rgb(160, 155, 155);
+
+   &__body {
+      display: flex;
+      justify-content: space-between;
+   }
+
+   &__axit {
+      flex: 0 1 44%;
+   }
+
+   &__title {
+      
+   }
+
+   &__subtitle {
+   }
+
+   &__text {
+   }
+
+   &__btn {
+   }
+
+   &__form {
+      display: flex;
+      flex: 0 1 33%;
+      flex-direction: column;
+   }
+
+   &__input {
+   }
+}
+
