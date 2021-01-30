@@ -52,10 +52,11 @@
 		}
 		&__menu {
 			display: flex;
-			align-items: flex-end;
+			align-items: center;
+			justify-content: center;
 			position: fixed;
 			top: -100%;
-			left: 85%;
+			left: 0;
 			height: 100%;
 			width: 100%;
 			background: #cc936a;
@@ -66,9 +67,10 @@
 			margin-left: 20px;
 			padding: 0px 0px 15px 0px;
 			display: block;
+			font-size: 40px;
 		}
 		&__menu.active {
-			top: -82%;
+			top: 0;
 		}
 
 		&__burger.active {

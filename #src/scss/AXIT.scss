@@ -1,36 +1,126 @@
 .axit {
-   padding: 180px 0px 140px 0px;
-   background-color: rgb(160, 155, 155);
+	padding: 180px 0px 140px 0px;
+	background-color: #9a9a9a;
+	height: 100vh;
+	@media(max-width: 767px){
+		&{
+			padding: 80px 0px 0px 0px;
+			height: auto;
+		}
+	}
 
-   &__body {
-      display: flex;
-      justify-content: space-between;
-   }
+	&__body {
+		display: flex;
+		justify-content: space-between;
+		@media (max-width: 767px) {
+			& {
+				display: flex;
+				flex-direction: column;
+			}
+		}
+	}
 
-   &__axit {
-      flex: 0 1 44%;
-   }
+	&__axit {
+		flex: 0 1 44%;
+		@media (max-width: 767px) {
+			& {display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+				text-align: center;
 
-   &__title {
-      
-   }
+			}
+		}
+	}
 
-   &__subtitle {
-   }
+	&__title {
+		width: 175px;
+		margin: 0px 0px 33px 0px;
+		height: 60px;
+		img {
+			width: 100%;
+		}
+	}
 
-   &__text {
-   }
+	&__subtitle {
+		font-family: Raleway;
+		font-size: 36px;
+		line-height: 1.2;
+		font-weight: 400;
+		color: #ffffff;
+		margin: 0px 0px 34px 0px;
 
-   &__btn {
-   }
+		&::after {
+			content: "";
+			display: block;
+			width: 66px;
+			height: 2px;
+			background: #fff;
+			margin-top: 34px;
+			@media(max-width: 767px){
+				&{
+					margin:auto;
+					margin-top: 20px;
+				}
+			}
+		}
+	}
 
-   &__form {
-      display: flex;
-      flex: 0 1 33%;
-      flex-direction: column;
-   }
+	&__text {
+		opacity: 0.8;
+		font-family: Raleway;
+		font-size: 16px;
+		line-height: 23px;
+		font-weight: 300;
+		color: #ffffff;
+		margin: 0px 0px 44px 0px;
+	}
 
-   &__input {
-   }
+	&__btn {}
+
+	&__form {
+		flex: 0 1 33%;
+		margin-top: 47px;
+	}
+	&__menu {
+		display: flex;
+		flex-direction: column;
+		background: #fff;
+		input {
+			margin: 0px 45px 36px 45px;
+			border-bottom: 1px solid #d7d7d7;
+			height: 33px;
+
+			&::placeholder {
+				color: #d2d2d2;
+				font-family: OpenSans;
+				font-size: 14px;
+				line-height: 1.2;
+				font-weight: 400;
+				padding-left: 14px;
+			}
+		}
+		p {
+			padding: 15px 0px;
+			text-align: center;
+			font-family: OpenSans;
+			font-size: 20px;
+			line-height: 1.2;
+			font-weight: 700;
+			color: #333333;
+			margin: 0px 0px 36px 0px;
+			span {
+				color: #ff8b38;
+			}
+		}
+	}
+	&__button {
+		padding: 20px;
+		background: #ff8b38;
+		color: white;
+		font-family: OpenSans;
+		font-size: 15px;
+		line-height: 1.2;
+		font-weight: 600;
+	}
 }
-
