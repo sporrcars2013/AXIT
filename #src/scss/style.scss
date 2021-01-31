@@ -76,91 +76,7 @@ body {
    }
    
 }
-.sub {
-   padding-top: 150px;
 
-   &__body {
-      display: flex;
-      justify-content: space-between;
-   }
-
-   &__img {
-      flex: 0 1 32%;
-      position: relative;
-      padding: 30px;
-      img{
-         display: block;
-      width: 100%;
-      height: 100%;
-      box-shadow: 5px 5px 25px;
-      
-
-   }
-      p {
-         text-align: center;
-         position: absolute;
-         top: 50%;
-         left: 50%;
-         transform: translate(-50%, -50%);
-         z-index: 2;
-         opacity: 0.21;
-         font-size: 33.1px;
-         line-height: 1.2;
-         font-weight: 400;
-         color: #ffffff;
-      }
-   }
-
-   &__text {
-      flex: 0 1 30%;
-   }
-
-   &__list-section {
-     
-      p{
-         font-size: 14px;
-         line-height: 18px;
-         font-weight: 400;
-         color: #86878b;
-      }
-      margin-bottom: 30px;
-   }
-
-   &__img-text {
-   }
-
-   &__item {
-      display: flex;
-   }
-   &__imge{
-      margin-right: 20px;
-      
-      
-      img{
-         border: 3px solid orange;
-         border-radius: 50%;
-
-         padding: 10px  ;
-      }
-   }
-
-   &__item-content {
-      padding-bottom: 20px;
-      h4{
-         font-family: OpenSans;
-         font-size: 14px;
-         line-height: 17px;
-         font-weight: 600;
-         color: #212121;
-      }
-      p{
-         font-size: 14px;
-         line-height: 20px;
-         font-weight: 400;
-         color: #86878b;
-      }
-   }
-}
 
 
 //</ОБНУЛЕНИЕ, ОБЩИЕ ПАРАМЕТРЫ>===============================================================================================
@@ -208,6 +124,7 @@ body {
 @import "why";
 @import "sub";
 @import "standard";
+@import "pricing";
 
 //</ПОДКЛЮЧЕНИЕ ФАЙЛОВ СТИЛЕЙ СТРАНИЦ И ЭЛЕМЕНТОВ>====================================================================================================
 

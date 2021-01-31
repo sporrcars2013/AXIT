@@ -13,23 +13,21 @@
       img{
          display: block;
       width: 100%;
-      height: 100%;
+      //height: 100%;
       box-shadow: 5px 5px 25px;
+     
       
 
    }
       p {
-         text-align: center;
+         
          position: absolute;
-         top: 50%;
-         left: 50%;
-         transform: translate(-50%, -50%);
-         z-index: 2;
-         opacity: 0.21;
-         font-size: 33.1px;
-         line-height: 1.2;
-         font-weight: 400;
-         color: #ffffff;
+         
+        top: 50%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%)
+
       }
    }
 
