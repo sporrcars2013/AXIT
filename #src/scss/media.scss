@@ -1,6 +1,7 @@
 .media {
 	padding: 22px 0px;
 	background: #ffffff;
+	
 	&__row {
 		display: flex;
 		justify-content: space-between;
@@ -37,12 +38,24 @@
 		font-weight: 400;
 		color: #86878b;
 
-		&__icons {
-			flex: 0 1 45%;
+		
+	}
+	&__icons {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			span {
+				display: flex;
+				
+			}
+		}
 
-			img {
+		&__link{
+			margin-left: 20px;
+			width: 45px;
+			height: 45px;
+				img {
 				width: 100%;
 			}
 		}
-	}
 }

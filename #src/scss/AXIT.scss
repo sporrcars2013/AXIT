@@ -1,7 +1,7 @@
 .axit {
 	padding: 180px 0px 140px 0px;
 	background-color: #9a9a9a;
-	height: 100vh;
+	// height: 100vh;
 	@media(max-width: 767px){
 		&{
 			padding: 80px 0px 0px 0px;
@@ -76,7 +76,9 @@
 		margin: 0px 0px 44px 0px;
 	}
 
-	&__btn {}
+	&__btn {
+		
+	}
 
 	&__form {
 		flex: 0 1 33%;
