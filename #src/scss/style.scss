@@ -33,6 +33,7 @@ body {
 }
 
 .btn {
+	position: relative;
 	padding: 10px 32px;
 	background-color: #9a9a9a;
 	border: 1px solid #fff;
@@ -44,7 +45,7 @@ body {
 		color: #ffffff;
 	}
 	&_o {
-		background-color:#ff8b38;
+		background-color: #ff8b38;
 	}
 
 	&_g {
@@ -53,32 +54,46 @@ body {
 	&_b {
 		background-color: rgb(60, 61, 133);
 	}
+	&:hover {
+		background: tomato;
+		box-shadow: 0px 0px 25px 5px #ff8b38;
+		top: 2px;
+		transition: all 2s ease-in-out 100ms;
+	}
 }
 
 .list-section {
-   h3{
-      font-size: 20px;
-      line-height: 43px;
-      font-weight: 800;
-      color: #212121;
-      &::after{
-         content: "";
-         display: block;
-         width: 60px;
-         height: 3px;
-         background-color: rgb(250, 121, 0);
-         bottom: 0;
-         left: -23px;
-         margin: 20px 0px;
-         
-
-      }
+	h3 {
+		font-size: 20px;
+		line-height: 43px;
+		font-weight: 800;
+		color: #212121;
+		&::after {
+			content: "";
+			display: block;
+			width: 60px;
+			height: 3px;
+			background-color: rgb(250, 121, 0);
+			bottom: 0;
+			left: -23px;
+			margin: 20px 0px;
+		}
 	}
 	&_c {
+		
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		margin: auto;
+		h3::after{
+			content: '';
+			margin: 20px auto;
+			
+		}
 	}
 }
 .column {
-
 	&__img {
 	}
 
