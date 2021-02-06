@@ -5,6 +5,12 @@ $(document).ready(function() {
 	});
 });
 
+$(document).ready(function() {
+	$('.pricing__item-one').click(function(event) {
+		$('.pricing__item-a').toggleClass('active');
+	});
+});
+
 
 
 
