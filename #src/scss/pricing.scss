@@ -1,88 +1,87 @@
 .pricing {
-padding: 100px 0px;
-background-color: rgb(219, 219, 219);
-   &__body {
-   }
+	padding: 100px 0px;
+	background-color: rgb(219, 219, 219);
+	@media (max-width: 426px) {
+		padding: 20px 0px;
+	}
+	&__body {
+	}
 
-   &__row {
-      
-   }
+	&__row {
+	}
 
-   &__column {
+	&__column {
 		display: flex;
-      justify-content: space-between;
-      margin: 0px -15px;
-   }
+		justify-content: space-between;
+		margin: 0px -15px;
+		@media (max-width: 426px) {
+			flex-direction: column;
+		}
+	}
 
-   &__item {
-
-   }
-	&__item-a{
+	&__item {
+	}
+	&__item-a {
 		display: none;
 		position: relative;
-		color: red;
-
 	}
-	&__item-a.active{
+	&__item-a.active {
 		display: block;
 		color: #fff;
 		background: rgb(218, 119, 7);
-		
 	}
 }
 
-
 .pricing .list-section_c {
-   text-align: center;
-   h3{
-      font-size: 40px;
-      text-align: center;
-     
-   }
-   p{
-      margin-bottom: 80px;
-   }
+	h3 {
+		font-size: 40px;
+		text-align: center;
+	}
+	p {
+		margin-bottom: 80px;
+		@media (max-width: 321px) {
+			margin-bottom: 25px;
+		}
+	}
 }
 .item {
-	flex: 1 1 33.333%;
+
+	flex: 0 0 33.333%;
 	padding: 0px 15px;
-   &__content {
-      
-      text-align: center;
-      background-color: rgb(14, 13, 13);
-      color: #fff;
+	&__content {
+		text-align: center;
+		background-color: rgb(14, 13, 13);
+		color: #fff;
+		
 
-         h3{
-            font-size: 25px;
-            padding: 30px 0px;
-            border-bottom: 2px solid rgb(255, 255, 255);
-         }
-         h2{
-            font-size: 60px;
-            padding: 40px 0px;
-            
-         }
-         p{
-            padding: 10px 0px;
-            color: rgb(156, 154, 154);
-            padding-bottom: 20px;
-            border-bottom: 2px solid rgb(211, 102, 0);
-         }
-      
-   }
+		h3 {
+			font-size: 25px;
+			padding: 30px 0px;
+			border-bottom: 2px solid rgb(255, 255, 255);
+		}
+		h2 {
+			font-size: 60px;
+			padding: 40px 0px;
+		}
+		p {
+			padding: 10px 0px;
+			color: rgb(156, 154, 154);
+			padding-bottom: 20px;
+			border-bottom: 2px solid rgb(211, 102, 0);
+		}
+	}
 
-   &__text {
-      box-shadow: 5px 5px 20px;
-      background-color: #fff;
-      text-align: center;
-      p{
-         font-size: 15px;
-         border-bottom: 1px solid rgb(204, 177, 177);
-         padding: 5px 0px;
-         opacity: 0.4;
-         
-         
-      }
-   }
+	&__text {
+		//flex: 1 1 auto;
+		box-shadow: 5px 5px 20px;
+		background-color: #fff;
+		text-align: center;
 
+		p {
+			font-size: 15px;
+			border-bottom: 1px solid rgb(204, 177, 177);
+			padding: 5px 0px;
+			opacity: 0.4;
+		}
+	}
 }

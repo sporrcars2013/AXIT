@@ -79,25 +79,31 @@ body {
 			margin: 20px 0px;
 		}
 	}
+	p {
+		font-family: OpenSans;
+		font-size: 14px;
+		line-height: 20px;
+		font-weight: 400;
+		color: #86878b;
+	}
 	&_c {
+		text-align: center;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
 		margin: auto;
 		h3 {
+			font-family: Raleway;
 			font-size: 36px;
 			font-weight: 400;
 		}
-		h3::after{
-			content: '';
+		h3::after {
+			content: "";
 			margin: 20px auto;
 		}
 	}
 }
-
-
-
 
 //</ОБНУЛЕНИЕ, ОБЩИЕ ПАРАМЕТРЫ>===============================================================================================
 
