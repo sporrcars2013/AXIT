@@ -24,9 +24,11 @@
 	&__item-a {
 		display: none;
 		position: relative;
+		
 	}
 	&__item-a.active {
-		display: block;
+		position: absolute;
+		//display: block;
 		color: #fff;
 		background: rgb(218, 119, 7);
 	}
@@ -45,9 +47,18 @@
 	}
 }
 .item {
-
+	perspective-origin: center;
+	perspective: 400px;
+	//background: #000
 	flex: 0 0 33.333%;
 	padding: 0px 15px;
+	transition: all 0.7s ease 0s;
+	&:hover{
+			transform: translateY( -30px);
+			transition: all 0.7s ease 0s;
+			
+	}
+
 	&__content {
 		text-align: center;
 		background-color: rgb(14, 13, 13);
