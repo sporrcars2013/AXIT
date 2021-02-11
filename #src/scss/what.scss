@@ -15,7 +15,7 @@
 	}
 	&__row {
 		display: flex;
-		margin: 0px -65px;
+		@include adaptiv-value("margin", -65, 10, 0);
 		@media (max-width:321px) {
 			flex-direction: column;
 			
@@ -24,8 +24,7 @@
 }
 .column-what {
 	flex: 0 0 33.333%;
-	padding: 0px 65px;
-
+	@include adaptiv-value("padding", 65, 10, 0);
 	&__text {
 		padding: 24px 12px;
 		background-color: #f5f5f5;
