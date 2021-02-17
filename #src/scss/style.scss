@@ -12,7 +12,7 @@
 //</Иконочные шрифты>==========================================================================================
 
 //<Шрифт по умолчанию>==========================================================================================
-$fontFamily: "OpenSans";
+$fontFamily: "";
 //</Шрифт по умолчанию>==========================================================================================
 
 //</ШРИФТЫ>=======================================================================================================
@@ -20,7 +20,7 @@ $fontFamily: "OpenSans";
 //<ПЕРЕМЕННЫЕ>===========================================================================================================
 $minWidth: 320;
 $maxWidth: 1400;
-$maxWidthContainer: 1170;
+$maxWidthContainer: 940;
 $md1: $maxWidthContainer + 12;
 $md2: 991.98;
 $md3: 767.98;
@@ -33,84 +33,6 @@ html, body {
 	// font-style: 16px;
 }
 
-.btn {
-	position: relative;
-	padding: 10px 32px;
-	background-color: #9a9a9a;
-	border: 1px solid #fff;
-	a {
-		font-family: OpenSans;
-		font-size: .9rem;
-		line-height: 1.2;
-		font-weight: 600;
-		color: #ffffff;
-	}
-	&_o {
-		background-color: #ff8b38;
-	}
-
-	&_g {
-		background-color: lime;
-	}
-	&_b {
-		background-color: rgb(60, 61, 133);
-	}
-	&:hover {
-		background: tomato;
-		box-shadow: 0px 0px 25px 5px #ff8b38;
-		top: 2px;
-		transition: all 0.1ms ease-in-out 0ms;
-	}
-	&_c{
-		display: block;
-		margin: auto;
-	}
-}
-
-.list-section {
-	h3 {
-		font-size: 20px;
-		line-height: 43px;
-		font-weight: 800;
-		color: #212121;
-		&::after {
-			content: "";
-			display: block;
-			width: 64px;
-			height: 2px;
-			background-color: rgb(250, 121, 0);
-			// bottom: 0;
-			// left: -23px;
-			
-			// margin: 20px auto;
-		}
-	}
-	p {
-		font-family: OpenSans;
-		font-size: 14px;
-		line-height: 21px;
-		font-weight: 400;
-		color: #86878b;
-		
-	}
-	&_c {
-		text-align: center;
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		
-		h3 {
-			font-family: Raleway;
-			@include adaptiv-font(36, 20, 0);
-			font-weight: 400;
-		}
-		h3::after {
-			content: "";
-			margin: 23px auto;
-		}
-	}
-}
 
 //</ОБНУЛЕНИЕ, ОБЩИЕ ПАРАМЕТРЫ>===============================================================================================
 
@@ -123,6 +45,7 @@ html, body {
 	flex-direction: column;
 }
 .page {
+	
 }
 //</ОБОЛОЧКА>===========================================================================================================
 
@@ -151,16 +74,7 @@ html, body {
 
 @import "header";
 @import "footer";
-@import "AXIT";
-@import "media";
-@import "tabs";
-@import "why";
-@import "sub";
-@import "standard";
-@import "pricing";
-@import "what";
-@import "stylish";
-@import "contact-us";
+
 //</ПОДКЛЮЧЕНИЕ ФАЙЛОВ СТИЛЕЙ СТРАНИЦ И ЭЛЕМЕНТОВ>====================================================================================================
 
 //<ОСНОВНОЙ БЛОК>====================================================================================================
